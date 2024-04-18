@@ -1,0 +1,122 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Mengatur jenis font */
+    background-color: #f2f2f2; 
+}
+
+/* Video background */
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Mengatur posisi z-index agar di belakang konten */
+    transform: translate(-50%, -50%); /* Mengatur posisi tengah */
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang dengan transparansi */
+}
+
+/* Kontainer lagu */
+.song-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Mengatur posisi tengah */
+    text-align: center; /* Posisi teks tengah */
+    color: #fff; /* Warna teks */
+}
+
+/* Cover lagu */
+.song-cover {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+/* Informasi lagu */
+.song-info {
+    margin-bottom: 20px; 
+}
+
+/* Judul lagu */
+.song-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+/* Artis */
+.song-artist {
+    font-size: 18px;
+}
+
+/* Kontainer progress bar */
+.progress-bar-container {
+    width: 80%; 
+    margin: 0 auto; /* Posisi tengah secara horizontal */
+    margin-top: 20px; /* Jarak atas */
+}
+
+/* Progress bar */
+.progress-bar {
+    background-color: #ccc; 
+    height: 10px; 
+    border-radius: 5px; /* Membuat ujung progress bar menjadi melengkung */
+    overflow: hidden; /* Memastikan isi progress bar tidak terlihat di luar batas */
+}
+
+/* Pengisi progress bar */
+.progress-bar-fill {
+    background-color: #6c6463;
+    height: 100%; /* Mengisi seluruh tinggi progress bar */
+    width: 0; /* Panjang awal progress bar */
+}
+
+/* Tampilan waktu */
+.time-display {
+    margin-top: 5px;
+    display: block; /* Menjadikan elemen sebagai blok */
+}
+
+/* Kontrol pemutaran */
+.play-controls {
+    margin-top: 20px; 
+}
+
+/* Tombol play dan pause */
+.play-button,
+.pause-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Membuat tombol menjadi lingkaran */
+    font-size: 24px;
+    color: #fff; /* Warna ikon */
+    background-color: #6c6463; 
+    transition: background-color 0.3s ease; /* Animasi perubahan warna latar tombol */
+}
+
+/* Efek hover pada tombol play dan pause */
+.play-button:hover,
+.pause-button:hover {
+    background-color: #333; /* Warna latar hover */
+}

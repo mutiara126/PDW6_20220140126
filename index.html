@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pertemuanPDW6</title>
+    <!-- menambahkan css-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link ke Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- menambahkan javascript-->
+    <script src="Script/main.js"></script>
+</head>
+<body>
+    <!-- Video background -->
+    <video id="bg-video" muted loop autoplay>
+        <source src="Assets/videoplayback (1).mp4" type="video/mp4">
+    </video>
+    
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Kontainer lagu -->
+    <div class="song-container">
+        <!-- Gambar cover lagu -->
+        <img src="Assets/images1.jpg" alt="song cover" class="song-cover">
+    
+        <div class="song-info">
+            <h2 class="song-title">About You</h2>
+            <p class="song-artist">The 1975</p>
+            <!-- Progress bar container -->
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <!-- Progress bar fill -->
+                    <div class="progress-bar-fill" id="progress-bar-fill"></div>
+                </div>
+            </div>
+            
+            <!-- Kontrol pemutaran lagu -->
+            <div class="play-controls">
+                <!-- Tombol play -->
+                <button class="play-button" onclick="playPause()">
+                    <i class="fa-solid fa-play" title="Play" id="play"></i>
+                </button>
+                <!-- Tombol pause -->
+                <button class="pause-button" onclick="playPause()">
+                    <i class="fa-solid fa-pause" title="Pause" id="pause"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Audio track -->
+        <audio src="Assets/5_6066792419729345156.mp3" class="song-track"></audio>
+    </div>
+</body>
+</html>
